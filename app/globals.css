@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #27292d;
+    color: #cddc39;
+  }
+  
+  body {
+    background-color: #27292d;
+    color: #cddc39;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-dark text-background font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-background-light hover:bg-background-dark text-text border border-text/20 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-background-light rounded-lg shadow-md border border-text/10 p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-text/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent bg-background text-text placeholder-text/60;
+  }
+  
+  .text-primary {
+    @apply text-text;
+  }
+  
+  .text-muted {
+    @apply text-text-muted;
+  }
+  
+  .bg-primary {
+    @apply bg-background;
+  }
+  
+  .bg-secondary {
+    @apply bg-background-light;
+  }
+} 
